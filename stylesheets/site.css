@@ -107,6 +107,7 @@
 
 :root {
   --color-background: #ADD7F6;
+  --color-body: #FFF;
   --font-family: IBM-Plex-Serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   color-scheme: light dark; }
 
@@ -116,23 +117,25 @@
 
 body {
   background-color: var(--color-background);
-  color: #333;
+  color: var(--color-body);
   font-family: var(--font-family);
   padding: 18vh 1rem;
   text-align: center; }
 
 a {
   color: rgba(0, 0, 0, 0.7); }
+  a p {
+    color: var(--color-body); }
   a:focus, a:hover {
     color: rgba(0, 0, 0, 0.6); }
 
-.homepage-title-wrapper {
+.homepage-wrapper {
   position: relative;
   width: 90vw;
   height: 1vh;
   margin: auto; }
 
-.homepage-title-wrapper h1 {
+.homepage-wrapper h1 {
   font-size: 10vmin;
   text-align: left;
   margin: auto;
@@ -148,3 +151,10 @@ a {
 .highlight-shadow {
   -webkit-box-shadow: 10px 0 0 #192bc2, -10px 0 0 #192bc2;
           box-shadow: 10px 0 0 #192bc2, -10px 0 0 #192bc2; }
+
+.homepage-menu {
+  position: fixed;
+  top: 50vh;
+  width: 90vw;
+  height: 1vh;
+  margin: auto; }
