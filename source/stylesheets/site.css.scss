@@ -146,25 +146,24 @@ p {
 .homepage-wrapper h1{
   font-size: 10vmin;
   text-align: center;
-  margin: auto;
+
   color: #FFF;
   /* background-image: linear-gradient(to right, #192bc2 0%, #6381DC 100%); */
 }
 
 .highlight {
   display: inline;
-  height: 2em;
   vertical-align: center;
   background: #192bc2;
   color: #fff;
   padding-top: 1%;
-  padding-bottom: 1%;
+  padding-bottom: .25%;
   word-wrap: break-word;
   margin: auto;
 }
 
 .highlight-shadow {
-  box-shadow: 10px 0 0 #192bc2, -10px 0 0 #192bc2;
+  box-shadow: .25em 0 0 #192bc2, -.25em 0 0 #192bc2;
   margin: auto;
 }
 
