@@ -6,11 +6,33 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "MYBE" %></title>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
-    <%= yield %>
+    <div class="banner">
+      <div class="banner-logo">
+        <h1 class="highlight highlight-shadow">
+          <a href="./../">Minnesota Youth for a Better Environment</a>
+        </h1>
+      </div>
+      <div class="banner-menu">
+        <p>
+          <div class="highlight highlight-shadow">
+            <a href="./what-we-do">what we do</a></div>
+          &nbsp; — &nbsp;
+          <div class="highlight highlight-shadow">
+            <a href="./about-us">about us</a></div>
+          &nbsp; — &nbsp;
+          <div class="highlight highlight-shadow">
+            <a href="./get-involved">get involved</a></div>
+        </p>
+      </div>
+    </div>
+    <div class="page-content"
+      <p>&nbsp;</p>
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -12,6 +12,7 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/index.html', layout: false
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
@@ -46,6 +47,8 @@ page '/*.txt', layout: false
 # end
 
 activate :livereload
+
+activate :directory_indexes
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
