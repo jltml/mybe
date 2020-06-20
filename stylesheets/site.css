@@ -1,120 +1,15 @@
-/* Avenir */
-@font-face {
-  font-family: Avenir;
-  src: url(./fonts/Avenir/AvenirLTStd-Book.woff); }
-
-@font-face {
-  font-family: Avenir;
-  src: url(./fonts/Avenir/AvenirLTStd-Heavy.woff);
-  font-weight: bold; }
-
-@font-face {
-  font-family: Avenir;
-  src: url(./fonts/Avenir/AvenirLTStd-BookOblique.woff);
-  font-style: italic; }
-
-@font-face {
-  font-family: Avenir;
-  src: url(./fonts/Avenir/AvenirLTStd-BookOblique.woff);
-  font-style: oblique; }
-
-@font-face {
-  font-family: Avenir;
-  src: url(./fonts/Avenir/AvenirLTStd-HeavyOblique.woff);
-  font-weight: bold;
-  font-style: oblique; }
-
-@font-face {
-  font-family: Avenir;
-  src: url(./fonts/Avenir/AvenirLTStd-HeavyOblique.woff);
-  font-weight: bold;
-  font-style: italic; }
-
-/* Nitti */
-@font-face {
-  font-family: Nitti;
-  src: url(./fonts/Nitti/nitti_light.woff); }
-
-@font-face {
-  font-family: Nitti;
-  src: url(./fonts/Nitti/nitti_medium.woff);
-  font-weight: bold; }
-
-/* iA Writer Duospace */
-@font-face {
-  font-family: iAWriterDuospace;
-  src: url(./fonts/iAWriterDuospace/iAWriterDuospace-Regular.otf); }
-
-@font-face {
-  font-family: iAWriterDuospace;
-  src: url(./fonts/iAWriterDuospace/iAWriterDuospace-Bold.otf);
-  font-weight: bold; }
-
-@font-face {
-  font-family: iAWriterDuospace;
-  src: url(./fonts/iAWriterDuospace/iAWriterDuospace-BoldItalic.woff);
-  font-weight: bold;
-  font-style: italic; }
-
-@font-face {
-  font-family: iAWriterDuospace;
-  src: url(./fonts/iAWriterDuospace/iAWriterDuospace-RegularItalic.woff);
-  font-style: italic; }
-
-/* IBM Plex Sans */
-/* There are more files in /fonts/IBM-Plex-Sans, but they're not yet referenced here */
-@font-face {
-  font-family: IBM-Plex-Sans;
-  src: url(./fonts/IBM-Plex-Sans/IBMPlexSans-Regular.otf); }
-
-@font-face {
-  font-family: IBM-Plex-Sans;
-  src: url(./fonts/IBM-Plex-Sans/IBMPlexSans-Bold.otf);
-  font-weight: bold; }
-
-@font-face {
-  font-family: IBM-Plex-Sans;
-  src: url(./fonts/IBM-Plex-Sans/IBMPlexSans-Italic.otf);
-  font-style: italic; }
-
-@font-face {
-  font-family: IBM-Plex-Sans;
-  src: url(./fonts/IBM-Plex-Sans/IBMPlexSans-BoldItalic.otf);
-  font-weight: bold;
-  font-style: italic; }
-
-/* IBM Plex Serif */
-/* There are more files in /fonts/IBM-Plex-Serif, but they're not yet referenced here */
-@font-face {
-  font-family: IBM-Plex-Serif;
-  src: url(./fonts/IBM-Plex-Serif/IBMPlexSerif-Regular.otf); }
-
-@font-face {
-  font-family: IBM-Plex-Serif;
-  src: url(./fonts/IBM-Plex-Serif/IBMPlexSerif-Bold.otf);
-  font-weight: bold; }
-
-@font-face {
-  font-family: IBM-Plex-Serif;
-  src: url(./fonts/IBM-Plex-Serif/IBMPlexSerif-Italic.otf);
-  font-style: italic; }
-
-@font-face {
-  font-family: IBM-Plex-Serif;
-  src: url(./fonts/IBM-Plex-Serif/IBMPlexSerif-BoldItalic.otf);
-  font-weight: bold;
-  font-style: italic; }
-
+@import url(./fonts/fonts.css);
 :root {
-  --color-body: #FFF;
-  --color-background: #ADD7F6;
+  --color-body: #000;
+  --color-background: #FFF;
+  --color-logo-body: #FFF;
   --background-gradient: linear-gradient(45deg, rgba(0,75,168,1) 0%, rgba(99,129,220,1) 73%);
-  --font-family: IBM-Plex-Serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: IBM-Plex-Serif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   color-scheme: light dark; }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-body: #000;
+    --color-body: #FFF;
     --color-background: rgb(48, 48, 48);
     --background-gradient: linear-gradient(45deg, rgba(20,27,65,1) 0%, rgba(21,5,120,1) 55%); } }
 
@@ -122,35 +17,9 @@ html {
   height: 1vh; }
 
 body {
-  background-color: var(--color-background);
-  background-image: var(--background-gradient);
   color: var(--color-body);
-  font-family: var(--font-family);
-  padding: 18vh 1rem;
-  text-align: center;
-  height: 100%;
-  margin: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-
-a {
-  color: rgba(0, 0, 0, 0.7); }
-  a p {
-    color: var(--color-body); }
-  a:focus, a:hover {
-    color: rgba(0, 0, 0, 0.6); }
-
-.homepage-wrapper {
-  position: relative;
-  width: 90vw;
-  height: 1vh;
-  margin: auto; }
-
-.homepage-wrapper h1 {
-  font-size: 10vmin;
-  text-align: center;
-  color: #FFF;
-  /* background-image: linear-gradient(to right, #192bc2 0%, #6381DC 100%); */ }
+  background-color: var(--color-background);
+  text-align: left; }
 
 .highlight {
   display: inline;
@@ -167,19 +36,42 @@ a {
           box-shadow: .25em 0 0 #192bc2, -.25em 0 0 #192bc2;
   margin: auto; }
 
-.homepage-menu {
+.banner {
+  display: flex;
+  align-items: center;
   position: fixed;
-  top: 50vh;
-  width: 90vw;
-  height: 1vh;
-  margin: auto; }
+  top: 0;
+  left: 0%;
+  right: 0%;
+  height: 8vmin;
+  background-image: var(--background-gradient);
+  font-size: 1.5vmin; }
 
-.homepage-menu p, a {
-  font-size: 5vmin;
-  color: #FFF;
+.banner-logo {
+  margin-left: 1%; }
+
+.banner-logo h1, a {
+  color: var(--color-logo-body);
   -webkit-transition: .5s;
   transition: .5s;
-  vertical-align: sub; }
+  text-decoration: none; }
 
-.homepage-menu p:hover, a:hover {
+.banner-menu {
+  margin-left: auto;
+  white-space: nowrap;
+  margin-right: 1%;
+  font-size: 2vmin;
+  color: var(--color-logo-body); }
+
+.banner-menu p {
+  margin: 0; }
+
+.homepage-menu h1:hover, a:hover {
   color: #adb5bd; }
+
+.page-content {
+  margin-top: 10vh;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  position: absolute;
+  z-index: -1; }
